@@ -13,7 +13,7 @@ export default {
 	// VERSION MVE OR ULT
 	version: 'MVE',
 	// Enable push notifications
-	pushNotifications: true,
+	pushNotifications: false,
 	pushNotificationChannelId: 'cscart.default',
 	pushNotificationsColor: '#26323e',
 	// Demo app features

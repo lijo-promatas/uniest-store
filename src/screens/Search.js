@@ -194,19 +194,22 @@ class Search extends Component {
 						ListFooterComponent={() => this.renderFooter()}
 						onEndReached={this.handleLoadMore}
 						renderItem={(item) => (
-							<ProductListView
-								product={item}
-								onPress={(product) =>
-									navigator.push({
-										screen: 'ProductDetail',
-										backButtonTitle: '',
-										passProps: {
-											pid: product.product_id,
-											hideSearch: true,
-										},
-									})
-								}
-							/>
+							// <ProductListView
+							// 	product={item}
+							// 	onPress={(product) =>
+							// 		navigator.push({
+							// 			screen: 'ProductDetail',
+							// 			backButtonTitle: '',
+							// 			passProps: {
+							// 				pid: product.product_id,
+							// 				hideSearch: true,
+							// 			},
+							// 		})
+							// 	}
+							// />
+							<View>
+								<Text>{item.company}</Text>
+							</View>
 						)}
 					/>
 				</View>
